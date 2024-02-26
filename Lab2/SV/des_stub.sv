@@ -27,26 +27,93 @@ module GenerateKeys (Key, SubKey1, SubKey2, SubKey3, SubKey4,
    output logic [47:0] SubKey14;
    output logic [47:0] SubKey15;
    output logic [47:0] SubKey16;
+   logic [27:0] c1, cs1;
+   logic [27:0] d1, ds1;
+   logic [27:0] c2, cs2;
+   logic [27:0] d2, ds2;
+   logic [27:0] c3, cs3;
+   logic [27:0] d3, ds3;
+   logic [27:0] c4, cs4;
+   logic [27:0] d4, ds4;
+   logic [27:0] c5, cs5;
+   logic [27:0] d5, ds5;
+   logic [27:0] c6, cs6;
+   logic [27:0] d6, ds6;
+   logic [27:0] c7, cs7;
+   logic [27:0] d7, ds7;
+   logic [27:0] c8, cs8;
+   logic [27:0] d8, ds8;
+   logic [27:0] c9, cs9;
+   logic [27:0] d9, ds9;
+   logic [27:0] c10, cs10;
+   logic [27:0] d10, ds10;
+   logic [27:0] c11, cs11;
+   logic [27:0] d11, ds11;
+   logic [27:0] c12, cs12;
+   logic [27:0] d12, ds12;
+   logic [27:0] c13, cs13;
+   logic [27:0] d13, ds13;
+   logic [27:0] c14, cs14;
+   logic [27:0] d14, ds14;
+   logic [27:0] c15, cs15;
+   logic [27:0] d15, ds15;
 
-endmodule // GenerateKeys
+
+   cs1= {c1[26:0], c1[27]};
+   ds1 = {d1[26:0], d1[27]};
+   cs2= {c2[26:0], c2[27]};
+   ds2 = {d2[26:0], d2[27]};
+   cs3= {c3[26:0], c3[27]};
+   ds3 = {d3[26:0], d3[27]};
+   cs4= {c4[26:0], c4[27]};
+   ds4 = {d4[26:0], d4[27]};
+   cs5= {c5[26:0], c5[27]};
+   ds5 = {d5[26:0], d5[27]};
+   cs6= {c6[26:0], c6[27]};
+   ds6 = {d6[26:0], d6[27]};
+   cs7= {c7[26:0], c7[27]};
+   ds7 = {d7[26:0], d7[27]};
+   cs8= {c8[26:0], c8[27]};
+   ds8 = {d8[26:0], d8[27]};
+   cs9= {c9[26:0], c9[27]};
+   ds9 = {d9[26:0], d9[27]};
+   cs10= {c10[26:0], c10[27]};
+   ds10 = {d10[26:0], d10[27]};
+   cs11= {c11[26:0], c11[27]};
+   ds11 = {d11[26:0], d11[27]};
+   cs12= {c12[26:0], c12[27]};
+   ds12 = {d12[26:0], d12[27]};
+   cs13= {c13[26:0], c13[27]};
+   ds13 = {d13[26:0], d13[27]};
+   cs14= {c14[26:0], c14[27]};
+   ds14 = {d14[26:0], d14[27]};
+   cs15= {c15[26:0], c15[27]};
+   ds15 = {d15[26:0], d15[27]};
+endmodule // GenerateKeys edit
 
 module PC1 (key, left_block, right_block);
 
    input logic [63:0]  key;
    output logic [27:0] left_block;
    output logic [27:0] right_block;
+   assign left_block = key[63:32];
+   assign right_block = key[31:0];
 
    logic [55:0]        out_block;
 
-endmodule // PC1
+endmodule // PC1 edit
 
 module PC2 (left_block, right_block, subkey);
 
    input logic [27:0] left_block;
    input logic [27:0] right_block;
    output logic [47:0] subkey;
+   assign subkey = {right_block, left_block};
 
-endmodule // PC2
+
+
+
+endmodule // PC2 edit
 
 // Straight Function
 module SF (inp_block, out_block);
@@ -56,13 +123,13 @@ module SF (inp_block, out_block);
 
 endmodule // SF
 
-// Expansion Function
+// Expansion Function edit
 module EF (inp_block, out_block);
 
    input logic [31:0] inp_block;
    output logic [47:0] out_block;
 
-endmodule // EF
+endmodule // EF edit
 
 module feistel (inp_block, subkey, out_block);
 
@@ -70,7 +137,7 @@ module feistel (inp_block, subkey, out_block);
    input logic [47:0]  subkey;
    output logic [31:0] out_block;
 
-endmodule // Feistel
+endmodule // Feistel edit
 
 // DES block round
 module round (inp_block, subkey, out_block);
@@ -81,7 +148,7 @@ module round (inp_block, subkey, out_block);
 
 endmodule // round1
 
-// Initial Permutation
+// Initial Permutation dont edit
 module IP (inp_block, out_block);
 
    input logic [63:0]  inp_block;
@@ -154,7 +221,7 @@ module IP (inp_block, out_block);
 
 endmodule // IP
 
-// Final Permutation
+// Final Permutation dont edit
 module FP (inp_block, out_block);
 
    input logic [63:0]  inp_block;
@@ -225,7 +292,7 @@ module FP (inp_block, out_block);
    assign out_block[1] = inp_block[64-57];
    assign out_block[0] = inp_block[64-25];  
 
-endmodule // FP
+endmodule // FP dont edit
 
 module S1_Box (inp_bits, out_bits);
 
@@ -303,7 +370,7 @@ module S1_Box (inp_bits, out_bits);
         endcase
      end // always_comb
    
-endmodule // S1_Box
+endmodule // S1_Box dont edit
 
 module S2_Box (inp_bits, out_bits);
 
@@ -381,7 +448,7 @@ module S2_Box (inp_bits, out_bits);
         endcase
      end // always_comb
    
-endmodule // S2_Box
+endmodule // S2_Box dont edit
 
 module S3_Box (inp_bits, out_bits);
 
@@ -459,7 +526,7 @@ module S3_Box (inp_bits, out_bits);
         endcase
      end // always_comb
    
-endmodule // S3_Box
+endmodule // S3_Box dont edit
 
 module S4_Box (inp_bits, out_bits);
 
