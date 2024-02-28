@@ -89,8 +89,10 @@ module GenerateKeys (Key, SubKey1, SubKey2, SubKey3, SubKey4,
    ds13 = {d13[25:0], d13[27:26]};
    cs14= {c14[25:0], c14[27:26]};
    ds14 = {d14[25:0], d14[27:26]};
-   cs15= {c15[26:0], c15[27]}; //keep same
-   ds15 = {d15[26:0], d15[27]};
+   cs15= {c15[25:0], c15[27:26]}; 
+   ds15 = {d15[25:0], d15[27:26]};
+   cs16= {c16[26:0], c16[27]}; //keep same
+   ds16 = {d16[26:0], d16[27]};
 endmodule // GenerateKeys edit
 
 module PC1 (key, left_block, right_block);
@@ -100,7 +102,7 @@ module PC1 (key, left_block, right_block);
    output logic [27:0] right_block;
    assign left_block = key[63:32];
    assign right_block = key[31:0];
-
+   
    logic [55:0]        out_block;
 
 endmodule // PC1 edit
