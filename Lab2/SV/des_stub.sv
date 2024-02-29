@@ -228,9 +228,17 @@ endmodule // PC2 edit
 
 // Straight Function
 module SF (inp_block, out_block);
-
+   S1_Box op (inp_block [5:0], out_block [5:0]);
+   S2_Box op (inp_block [11:6], out_block [11:6]);
+   S3_Box op (inp_block [17:12], out_block [17:12]);
+   S4_Box op (inp_block [23:18], out_block [23:18]);
+   S5_Box op (inp_block [29:24], out_block [29:24]);
+   S6_Box op (inp_block [35:30], out_block [35:30]);
+   S7_Box op (inp_block [41:36], out_block [41:36]);
+   S8_Box op (inp_block [47:42], out_block [47:42]);
    input logic [31:0] inp_block;
    output logic [31:0] out_block;
+
 
 endmodule // SF
 
@@ -239,6 +247,7 @@ module EF (inp_block, out_block);
 
    input logic [31:0] inp_block;
    output logic [47:0] out_block;
+
 
 endmodule // EF edit
 
@@ -334,6 +343,7 @@ endmodule // IP
 
 // Final Permutation dont edit
 module FP (inp_block, out_block);
+
 
    input logic [63:0]  inp_block;
    output logic [63:0] out_block;
