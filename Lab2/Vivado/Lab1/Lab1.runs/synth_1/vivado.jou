@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Mar  6 18:19:54 2024
-# Process ID: 36644
+# Start of session at: Fri Mar  8 12:55:04 2024
+# Process ID: 12144
 # Current directory: C:/Users/srobi18/Desktop/Lab-2/Lab2/Vivado/Lab1/Lab1.runs/synth_1
 # Command line: vivado.exe -log top_demo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_demo.tcl
 # Log file: C:/Users/srobi18/Desktop/Lab-2/Lab2/Vivado/Lab1/Lab1.runs/synth_1/top_demo.vds

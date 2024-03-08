@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Wed Mar  6 18:21:25 2024
-| Host             : CEAT-ENDV350-02 running 64-bit major release  (build 9200)
+| Date             : Fri Mar  8 12:56:47 2024
+| Host             : CEAT-ENDV350-10 running 64-bit major release  (build 9200)
 | Command          : report_power -file top_demo_power_routed.rpt -pb top_demo_power_summary_routed.pb -rpx top_demo_power_routed.rpx
 | Design           : top_demo
 | Device           : xc7z020clg484-1
@@ -29,20 +29,20 @@ Table of Contents
 1. Summary
 ----------
 
-+--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 28.886 (Junction temp exceeded!) |
-| Design Power Budget (W)  | Unspecified*                     |
-| Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 27.845                           |
-| Device Static (W)        | 1.041                            |
-| Effective TJA (C/W)      | 11.5                             |
-| Max Ambient (C)          | 0.0                              |
-| Junction Temperature (C) | 125.0                            |
-| Confidence Level         | Low                              |
-| Setting File             | ---                              |
-| Simulation Activity File | ---                              |
-| Design Nets Matched      | NA                               |
-+--------------------------+----------------------------------+
++--------------------------+-----------------------------------+
+| Total On-Chip Power (W)  | 249.328 (Junction temp exceeded!) |
+| Design Power Budget (W)  | Unspecified*                      |
+| Power Budget Margin (W)  | NA                                |
+| Dynamic (W)              | 248.287                           |
+| Device Static (W)        | 1.041                             |
+| Effective TJA (C/W)      | 11.5                              |
+| Max Ambient (C)          | 0.0                               |
+| Junction Temperature (C) | 125.0                             |
+| Confidence Level         | Low                               |
+| Setting File             | ---                               |
+| Simulation Activity File | ---                               |
+| Design Nets Matched      | NA                                |
++--------------------------+-----------------------------------+
 * Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
 
 
@@ -52,17 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.465 |      125 |       --- |             --- |
-|   LUT as Logic |     0.426 |       55 |     53200 |            0.10 |
-|   Register     |     0.013 |       34 |    106400 |            0.03 |
-|   CARRY4       |     0.012 |        4 |     13300 |            0.03 |
-|   F7/F8 Muxes  |     0.009 |        7 |     53200 |            0.01 |
+| Slice Logic    |   118.694 |     1114 |       --- |             --- |
+|   LUT as Logic |   118.667 |      838 |     53200 |            1.58 |
+|   Register     |     0.012 |       19 |    106400 |            0.02 |
+|   CARRY4       |     0.010 |        4 |     13300 |            0.03 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
-|   Others       |     0.000 |        6 |       --- |             --- |
-| Signals        |     0.730 |      110 |       --- |             --- |
-| I/O            |    26.650 |       29 |       200 |           14.50 |
+|   Others       |     0.000 |        4 |       --- |             --- |
+| Signals        |    97.804 |     1117 |       --- |             --- |
+| I/O            |    31.789 |       30 |       200 |           15.00 |
 | Static Power   |     1.041 |          |           |                 |
-| Total          |    28.886 |          |           |                 |
+| Total          |   249.328 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     1.526 |       1.227 |      0.299 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     1.075 |       0.975 |      0.100 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     7.535 |       7.534 |      0.001 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |   216.833 |     216.534 |      0.299 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     1.263 |       1.164 |      0.100 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     8.988 |       8.987 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -146,8 +145,25 @@ Table of Contents
 +----------+-----------+
 | Name     | Power (W) |
 +----------+-----------+
-| top_demo |    27.845 |
-|   driver |     0.567 |
+| top_demo |   248.287 |
+|   driver |     0.388 |
+|   stupid |   202.981 |
+|     r10  |     7.913 |
+|     r11  |     9.413 |
+|     r12  |    10.706 |
+|     r13  |    10.089 |
+|     r14  |    11.357 |
+|     r15  |    10.463 |
+|     r16  |   120.996 |
+|       f1 |   120.996 |
+|     r3   |     0.405 |
+|       f1 |     0.068 |
+|     r4   |     0.741 |
+|     r5   |     1.486 |
+|     r6   |     2.666 |
+|     r7   |     3.650 |
+|     r8   |     5.354 |
+|     r9   |     7.014 |
 +----------+-----------+
 
 
