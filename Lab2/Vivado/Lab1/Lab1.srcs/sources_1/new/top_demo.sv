@@ -43,17 +43,49 @@ module top_demo
   logic [16:0] CURRENT_COUNT;
   logic [16:0] NEXT_COUNT;
   logic        smol_clk;
+  logic [63:0] key;
+  logic [63:0] plaintext;
+  logic encrypt;
+  logic [63:0] ciphertext;
+  logic [15:0] out;
+  assign key = 64'h1334_5779_9bbc_dff1;
+  assign plaintext = 64'h1234_56ab_cd13_2536;
+  //assign key = 64'h433e4529462a4a62;
+  //assign key = 64'h3b3898371520f75e;
+  //assign key = 64'h0e329232ea6d0d73;
+  always_comb begin
+  case(sw[3:0])
+  
+  
+  4'b0000 : out[15:0] = plaintext[15:0];
+  4'b0001 : out[15:0] = plaintext [31:16];
+  4'b0010 : out[15:0] = plaintext [47:32];
+  4'b0011 : out[15:0] = plaintext [63:48];
+  4'b0100 : out[15:0] = ciphertext [15:0];
+  4'b0101 : out[15:0] = ciphertext [31:16];
+  4'b0110 : out[15:0] = ciphertext [47:32];
+  4'b0111 : out[15:0] = ciphertext [63:48];
+  4'b1000 : out[15:0] = key [15:0];
+  4'b1001 : out[15:0] = key [31:16];
+  4'b1010 : out[15:0] = key [47:32];
+  4'b1011 : out[15:0] = key [63:48];
+  endcase
+  end
+
+  
   
   // Place TicTacToe instantiation here
+  DES stupid (key, plaintext, encrypt, ciphertext);
+
   
   // 7-segment display
   segment_driver driver(
   .clk(smol_clk),
   .rst(btn[3]),
-  .digit0(sw[3:0]),
-  .digit1(4'b0111),
-  .digit2(sw[7:4]),
-  .digit3(4'b1111),
+  .digit0(out[3:0]),
+  .digit1(out[7:4]),
+  .digit2(out[11:8]),
+  .digit3(out[15:12]),
   .decimals({1'b0, btn[2:0]}),
   .segment_cathodes({sseg_dp, sseg_cg, sseg_cf, sseg_ce, sseg_cd, sseg_cc, sseg_cb, sseg_ca}),
   .digit_anodes(sseg_an)

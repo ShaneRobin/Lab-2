@@ -1,0 +1,769 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 27444
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Wed Mar 06 16:58:16 CST 2024
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 3840x2160
+Screen resolution (DPI): 300
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=36
+Scale size: 108
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	srobi18
+User home directory: C:/Users/srobi18
+User working directory: C:/Users/srobi18/Desktop/Lab-2/Lab2/Vivado/Lab1
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.2
+RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/srobi18/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/srobi18/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/srobi18/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/srobi18/Desktop/Lab-2/Lab2/Vivado/Lab1/vivado.log
+Vivado journal file location: 	C:/Users/srobi18/Desktop/Lab-2/Lab2/Vivado/Lab1/vivado.jou
+Engine tmp dir: 	C:/Users/srobi18/Desktop/Lab-2/Lab2/Vivado/Lab1/.Xil/Vivado-27444-CEAT-ENDV350-02
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@yamato.ecen.okstate.edu
+XILINX_DSP: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	160 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,047 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 135 MB (+139367kb) [00:00:05]
+// [Engine Memory]: 1,047 MB (+946366kb) [00:00:05]
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\srobi18\Desktop\Lab-2\Lab2\Vivado\Lab1\Lab1.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/srobi18/Desktop/Lab-2/Lab2/Vivado/Lab1/Lab1.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/srobi18/Desktop/Lab-2/Lab2/Vivado/Lab1/Lab1.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from '/home/jstine/vivado/Lab1' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,047 MB. GUI used memory: 93 MB. Current time: 3/6/24, 4:58:17 PM CST
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 150 MB (+8365kb) [00:00:11]
+// WARNING: HEventQueue.dispatchEvent() is taking  2386 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'. 
+// Project name: Lab1; location: C:/Users/srobi18/Desktop/Lab-2/Lab2/Vivado/Lab1; part: xc7z020clg484-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 1080.859 ; gain = 0.000 
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// [GUI Memory]: 166 MB (+9339kb) [00:00:15]
+// a (cr): Critical Messages: addNotify
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 14 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+// [GUI Memory]: 178 MB (+3584kb) [00:00:30]
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_demo (top_demo.sv)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_demo (top_demo.sv), driver : segment_driver (segment_driver.sv)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 42 seconds
+selectCodeEditor("top_demo.sv", 574, 80); // bP
+// Elapsed time: 162 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bz (cr):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bz
+// HMemoryUtils.trashcanNow. Engine heap size: 1,068 MB. GUI used memory: 120 MB. Current time: 3/6/24, 5:02:17 PM CST
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ak
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bz (cr):  Auto Connect : addNotify
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2020.2   **** Build date : Nov 18 2020 at 10:01:48     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2020.2   ****** Build date   : Nov 03 2020-15:02:56     **** Build number : 2020.2.1604437376       ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1110.266 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210014A24EBFA 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  3547 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,610 MB. GUI used memory: 141 MB. Current time: 3/6/24, 5:02:34 PM CST
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2661.801 ; gain = 1551.535 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/srobi18/Desktop/Lab-2/Lab2/Vivado/Lab1/Lab1.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1] 
+// Tcl Message: current_hw_device [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 2,612 MB (+1585890kb) [00:04:27]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0). 
+// Elapsed time: 15 seconds
+dismissDialog("Auto Connect"); // bz
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// cD (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cA' command handler elapsed time: 4 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // cD
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// bz (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Mar  6 17:02:50 2024] Launched synth_1... Run output will be captured here: C:/Users/srobi18/Desktop/Lab-2/Lab2/Vivado/Lab1/Lab1.runs/synth_1/runme.log [Wed Mar  6 17:02:50 2024] Launched impl_1... Run output will be captured here: C:/Users/srobi18/Desktop/Lab-2/Lab2/Vivado/Lab1/Lab1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 107 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bz (cr):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,446 MB. GUI used memory: 121 MB. Current time: 3/6/24, 5:04:43 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1047 ms.
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 3,581 MB. GUI used memory: 121 MB. Current time: 3/6/24, 5:04:57 PM CST
+// [Engine Memory]: 3,581 MB (+879787kb) [00:06:50]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// [GUI Memory]: 200 MB (+13314kb) [00:06:51]
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1631 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z020clg484-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3024.812 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2020.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 3680.211 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 3680.211 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3680.211 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Device view-level: 0.0
+// TclEventType: DRC_ADDED
+// Tcl Message: open_run: Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 3836.613 ; gain = 1151.430 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [Engine Memory]: 3,763 MB (+2909kb) [00:06:54]
+// 'dV' command handler elapsed time: 24 seconds
+// Device view-level: 0.5
+// Device view-level: 0.0
+// Elapsed time: 24 seconds
+dismissDialog("Open Implemented Design"); // bz
+// [GUI Memory]: 218 MB (+8094kb) [00:08:26]
+// Elapsed time: 162 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_demo.sv", 2); // m
+// Elapsed time: 21 seconds
+selectCodeEditor("top_demo.sv", 719, 418); // bP
+// Elapsed time: 34 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // F
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // m
+// Device view-level: 0.7
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_demo.sv", 2); // m
+// Elapsed time: 11 seconds
+selectCodeEditor("top_demo.sv", 412, 625); // bP
+selectCodeEditor("top_demo.sv", 420, 583); // bP
+selectCodeEditor("top_demo.sv", 530, 474); // bP
+selectCodeEditor("top_demo.sv", 487, 405); // bP
+selectCodeEditor("top_demo.sv", 466, 348); // bP
+selectCodeEditor("top_demo.sv", 430, 310); // bP
+// Elapsed time: 15 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // az
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+// HMemoryUtils.trashcanNow. Engine heap size: 3,792 MB. GUI used memory: 176 MB. Current time: 3/6/24, 5:09:52 PM CST
+// Elapsed time: 24 seconds
+setFileChooser("C:/Users/srobi18/Desktop/Lab-2/Lab2/SV/des_stub.sv");
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 33 seconds
+dismissDialog("Add Sources"); // c
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,848 MB. GUI used memory: 176 MB. Current time: 3/6/24, 5:10:17 PM CST
+// Tcl Message: add_files -norecurse C:/Users/srobi18/Desktop/Lab-2/Lab2/SV/des_stub.sv 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 236 MB (+7684kb) [00:12:16]
+// Elapsed time: 47 seconds
+selectCodeEditor("top_demo.sv", 512, 359); // bP
+selectCodeEditor("top_demo.sv", 610, 332); // bP
+// Elapsed time: 1049 seconds
+selectCodeEditor("top_demo.sv", 1147, 323); // bP
+// Elapsed time: 92 seconds
+selectCodeEditor("top_demo.sv", 433, 372); // bP
+typeControlKey((HResource) null, "top_demo.sv", 'c'); // bP
+selectCodeEditor("top_demo.sv", 427, 356); // bP
+// Elapsed time: 87 seconds
+selectCodeEditor("top_demo.sv", 36, 518); // bP
+selectCodeEditor("top_demo.sv", 43, 323); // bP
+selectCodeEditor("top_demo.sv", 247, 626); // bP
+selectCodeEditor("top_demo.sv", 59, 644); // bP
+selectCodeEditor("top_demo.sv", 309, 319); // bP
+selectCodeEditor("top_demo.sv", 417, 315); // bP
+selectCodeEditor("top_demo.sv", 660, 319); // bP
+selectCodeEditor("top_demo.sv", 947, 341); // bP
+selectCodeEditor("top_demo.sv", 149, 361); // bP
+selectCodeEditor("top_demo.sv", 71, 650); // bP
+selectCodeEditor("top_demo.sv", 556, 659); // bP
+selectCodeEditor("top_demo.sv", 352, 653); // bP
+selectCodeEditor("top_demo.sv", 430, 351); // bP
+typeControlKey((HResource) null, "top_demo.sv", 'v'); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("top_demo.sv", 40, 369); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("top_demo.sv", 455, 406); // bP
+// Elapsed time: 33 seconds
+selectCodeEditor("top_demo.sv", 489, 375); // bP
+selectCodeEditor("top_demo.sv", 307, 567); // bP
+selectCodeEditor("top_demo.sv", 144, 342); // bP
+// Elapsed time: 34 seconds
+selectCodeEditor("top_demo.sv", 261, 754); // bP
+selectCodeEditor("top_demo.sv", 493, 488); // bP
+// Elapsed time: 20 seconds
+selectCodeEditor("top_demo.sv", 240, 371); // bP
+// Elapsed time: 28 seconds
+selectCodeEditor("top_demo.sv", 321, 400); // bP
+selectCodeEditor("top_demo.sv", 167, 411); // bP
+// Elapsed time: 49 seconds
+selectCodeEditor("top_demo.sv", 304, 421); // bP
+selectCodeEditor("top_demo.sv", 318, 347); // bP
+selectCodeEditor("top_demo.sv", 630, 565); // bP
+// Elapsed time: 36 seconds
+selectCodeEditor("top_demo.sv", 388, 640); // bP
+selectCodeEditor("top_demo.sv", 421, 449); // bP
+selectCodeEditor("top_demo.sv", 520, 399); // bP
+// Elapsed time: 98 seconds
+typeControlKey((HResource) null, "top_demo.sv", 'v'); // bP
+// Elapsed time: 41 seconds
+selectCodeEditor("top_demo.sv", 680, 419); // bP
+selectCodeEditor("top_demo.sv", 276, 955); // bP
+selectCodeEditor("top_demo.sv", 326, 410); // bP
+// Elapsed time: 37 seconds
+selectCodeEditor("top_demo.sv", 718, 336); // bP
+selectCodeEditor("top_demo.sv", 799, 385); // bP
+selectCodeEditor("top_demo.sv", 38, 411); // bP
+typeControlKey((HResource) null, "top_demo.sv", 'c'); // bP
+selectCodeEditor("top_demo.sv", 815, 413); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 3,860 MB. GUI used memory: 178 MB. Current time: 3/6/24, 5:40:17 PM CST
+// Elapsed time: 50 seconds
+selectCodeEditor("top_demo.sv", 442, 1003); // bP
+// Elapsed time: 165 seconds
+selectCodeEditor("top_demo.sv", 807, 265); // bP
+typeControlKey((HResource) null, "top_demo.sv", 'c'); // bP
+selectCodeEditor("top_demo.sv", 206, 301); // bP
+typeControlKey((HResource) null, "top_demo.sv", 'v'); // bP
+typeControlKey((HResource) null, "top_demo.sv", 'v'); // bP
+typeControlKey((HResource) null, "top_demo.sv", 'v'); // bP
+// Elapsed time: 17 seconds
+selectCodeEditor("top_demo.sv", 1666, 920); // bP
+selectCodeEditor("top_demo.sv", 758, 311); // bP
+selectCodeEditor("top_demo.sv", 760, 310); // bP
+typeControlKey((HResource) null, "top_demo.sv", 'v'); // bP
+selectCodeEditor("top_demo.sv", 769, 362); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("top_demo.sv", 1655, 353); // bP
+typeControlKey((HResource) null, "top_demo.sv", 'v'); // bP
+selectCodeEditor("top_demo.sv", 774, 418); // bP
+// Elapsed time: 13 seconds
+typeControlKey((HResource) null, "top_demo.sv", 'v'); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("top_demo.sv", 932, 428); // bP
+// Elapsed time: 239 seconds
+selectCodeEditor("top_demo.sv", 40, 437); // bP
+// Elapsed time: 23 seconds
+selectCodeEditor("top_demo.sv", 1023, 672); // bP
+// Elapsed time: 26 seconds
+selectCodeEditor("top_demo.sv", 361, 756); // bP
+// Elapsed time: 28 seconds
+selectCodeEditor("top_demo.sv", 266, 733); // bP
+// Elapsed time: 378 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 24 seconds
+selectCodeEditor("top_demo.sv", 362, 919); // bP
+// Elapsed time: 84 seconds
+selectCodeEditor("top_demo.sv", 811, 706); // bP
+// Elapsed time: 43 seconds
+selectCodeEditor("top_demo.sv", 431, 740); // bP
+selectCodeEditor("top_demo.sv", 56, 772); // bP
+selectCodeEditor("top_demo.sv", 484, 742); // bP
+typeControlKey((HResource) null, "top_demo.sv", 'c'); // bP
+selectCodeEditor("top_demo.sv", 726, 647); // bP
+typeControlKey((HResource) null, "top_demo.sv", 'v'); // bP
+selectCodeEditor("top_demo.sv", 837, 732); // bP
+selectCodeEditor("top_demo.sv", 410, 1126); // bP
+// Elapsed time: 34 seconds
+selectCodeEditor("top_demo.sv", 755, 1124); // bP
+selectCodeEditor("top_demo.sv", 359, 1177); // bP
+// Elapsed time: 24 seconds
+selectCodeEditor("top_demo.sv", 359, 1177); // bP
+selectCodeEditor("top_demo.sv", 819, 1157); // bP
+// Elapsed time: 49 seconds
+selectCodeEditor("top_demo.sv", 823, 942); // bP
+typeControlKey((HResource) null, "top_demo.sv", 'c'); // bP
+selectCodeEditor("top_demo.sv", 423, 983); // bP
+// Elapsed time: 19 seconds
+typeControlKey((HResource) null, "top_demo.sv", 'v'); // bP
+selectCodeEditor("top_demo.sv", 494, 1032); // bP
+selectCodeEditor("top_demo.sv", 680, 1032); // bP
+// Elapsed time: 27 seconds
+selectCodeEditor("top_demo.sv", 804, 982); // bP
+typeControlKey((HResource) null, "top_demo.sv", 'c'); // bP
+// Elapsed time: 183 seconds
+selectCodeEditor("top_demo.sv", 756, 1043); // bP
+selectCodeEditor("top_demo.sv", 756, 1043); // bP
+typeControlKey((HResource) null, "top_demo.sv", 'v'); // bP
+selectCodeEditor("top_demo.sv", 75, 889); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("top_demo.sv", 189, 696); // bP
+// Device view-level: 0.5
+// HMemoryUtils.trashcanNow. Engine heap size: 3,861 MB. GUI used memory: 182 MB. Current time: 3/6/24, 6:06:19 PM CST
+// [GUI Memory]: 266 MB (+19640kb) [01:08:26]
+// Elapsed time: 62 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_demo.sv", 2); // m
+typeControlKey((HResource) null, "top_demo.sv", 'c'); // bP
+// Elapsed time: 69 seconds
+selectCodeEditor("top_demo.sv", 699, 1036); // bP
+selectCodeEditor("top_demo.sv", 690, 1034); // bP
+typeControlKey((HResource) null, "top_demo.sv", 'v'); // bP
+selectCodeEditor("top_demo.sv", 33, 520); // bP
+selectCodeEditor("top_demo.sv", 820, 552); // bP
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210014A24EBFA 
+// o (cr): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 93 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Close Hardware Target"); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // m
+// Device view-level: 0.7
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_demo.sv", 2); // m
+selectCodeEditor("top_demo.sv", 748, 895); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("top_demo.sv", 219, 843); // bP
+selectCodeEditor("top_demo.sv", 717, 853); // bP
+selectCodeEditor("top_demo.sv", 711, 901); // bP
+// Elapsed time: 29 seconds
+selectCodeEditor("top_demo.sv", 366, 119); // bP
+selectCodeEditor("top_demo.sv", 210, 221); // bP
+selectCodeEditor("top_demo.sv", 145, 910); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// cD (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cA' command handler elapsed time: 4 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,867 MB. GUI used memory: 177 MB. Current time: 3/6/24, 6:11:17 PM CST
+dismissDialog("Launch Runs"); // cD
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Wed Mar  6 18:11:18 2024] Launched synth_1... Run output will be captured here: C:/Users/srobi18/Desktop/Lab-2/Lab2/Vivado/Lab1/Lab1.runs/synth_1/runme.log [Wed Mar  6 18:11:18 2024] Launched impl_1... Run output will be captured here: C:/Users/srobi18/Desktop/Lab-2/Lab2/Vivado/Lab1/Lab1.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 10 seconds
+selectCodeEditor("top_demo.sv", 174, 537); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("top_demo.sv", 192, 442); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("top_demo.sv", 412, 65); // bP
+selectCodeEditor("top_demo.sv", 221, 829); // bP
+selectCodeEditor("top_demo.sv", 139, 790); // bP
+selectCodeEditor("top_demo.sv", 615, 795); // bP
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("top_demo.sv", 189, 736); // bP
+// Elapsed time: 17 seconds
+selectCodeEditor("top_demo.sv", 332, 350); // bP
+selectCodeEditor("top_demo.sv", 39, 365); // bP
+// TclEventType: RUN_STEP_COMPLETED
+typeControlKey((HResource) null, "top_demo.sv", 'c'); // bP
+typeControlKey((HResource) null, "top_demo.sv", 'c'); // bP
+// Elapsed time: 29 seconds
+selectCodeEditor("top_demo.sv", 793, 1009); // bP
+typeControlKey((HResource) null, "top_demo.sv", 'v'); // bP
+selectCodeEditor("top_demo.sv", 171, 794); // bP
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("top_demo.sv", 631, 786); // bP
+// ag (cr): Bitstream Generation Failed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ag
+selectCodeEditor("top_demo.sv", 750, 110); // bP
+selectCodeEditor("top_demo.sv", 677, 123); // bP
+// Elapsed time: 19 seconds
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // F
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // F
+// Elapsed time: 19 seconds
+selectCodeEditor("top_demo.sv", 876, 398); // bP
+typeControlKey((HResource) null, "top_demo.sv", 'c'); // bP
+typeControlKey((HResource) null, "top_demo.sv", 'v'); // bP
+typeControlKey((HResource) null, "top_demo.sv", 'v'); // bP
+selectCodeEditor("top_demo.sv", 239, 458); // bP
+selectCodeEditor("top_demo.sv", 239, 458, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("top_demo.sv", 440, 208); // bP
+selectCodeEditor("top_demo.sv", 440, 208, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "top_demo.sv", 'c'); // bP
+selectCodeEditor("top_demo.sv", 234, 464); // bP
+selectCodeEditor("top_demo.sv", 234, 464, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "top_demo.sv", 'v'); // bP
+selectCodeEditor("top_demo.sv", 217, 511); // bP
+selectCodeEditor("top_demo.sv", 217, 511, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("top_demo.sv", 906, 509); // bP
+selectCodeEditor("top_demo.sv", 663, 629); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("top_demo.sv", 425, 507); // bP
+selectCodeEditor("top_demo.sv", 186, 250); // bP
+// Elapsed time: 19 seconds
+selectCodeEditor("top_demo.sv", 255, 670); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 17 seconds
+selectCodeEditor("top_demo.sv", 726, 743); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 31 seconds
+selectCodeEditor("top_demo.sv", 732, 591); // bP
+selectCodeEditor("top_demo.sv", 553, 605); // bP
+typeControlKey((HResource) null, "top_demo.sv", 'v'); // bP
+selectCodeEditor("top_demo.sv", 415, 550); // bP
+typeControlKey((HResource) null, "top_demo.sv", 'v'); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 33, false); // u
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 32, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // K
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// cD (cr): Launch Runs: addNotify
+selectCheckBox(PAResourceItoN.LaunchPanel_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", true); // g: TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cA' command handler elapsed time: 3 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // cD
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Wed Mar  6 18:16:32 2024] Launched synth_1... Run output will be captured here: C:/Users/srobi18/Desktop/Lab-2/Lab2/Vivado/Lab1/Lab1.runs/synth_1/runme.log [Wed Mar  6 18:16:32 2024] Launched impl_1... Run output will be captured here: C:/Users/srobi18/Desktop/Lab-2/Lab2/Vivado/Lab1/Lab1.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 76 seconds
+selectCodeEditor("top_demo.sv", 46, 605); // bP
+typeControlKey((HResource) null, "top_demo.sv", 'c'); // bP
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 34 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// bz (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/srobi18/Desktop/Lab-2/Lab2/Vivado/Lab1/Lab1.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bz
+// Elapsed time: 66 seconds
+selectCodeEditor("top_demo.sv", 236, 526, false, false, false, true, false); // bP - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ak
+selectCodeEditor("top_demo.sv", 96, 464); // bP
+// Run Command: RDIResourceCommand.RDICommands_UNSELECT_ALL
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bz
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Wed Mar  6 18:19:52 2024] Launched synth_1... Run output will be captured here: C:/Users/srobi18/Desktop/Lab-2/Lab2/Vivado/Lab1/Lab1.runs/synth_1/runme.log [Wed Mar  6 18:19:52 2024] Launched impl_1... Run output will be captured here: C:/Users/srobi18/Desktop/Lab-2/Lab2/Vivado/Lab1/Lab1.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 23 seconds
+selectCodeEditor("top_demo.sv", 900, 313); // bP
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 91 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z020_1"); // ak
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// bz (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/srobi18/Desktop/Lab-2/Lab2/Vivado/Lab1/Lab1.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bz
+// Elapsed time: 96 seconds
+selectCodeEditor("top_demo.sv", 1754, 158); // bP
+// Elapsed time: 15 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "stup"); // l
+// Elapsed time: 48 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "stup"); // l
+// Elapsed time: 70 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "stup"); // l
+// Elapsed time: 53 seconds
+selectCodeEditor("top_demo.sv", 552, 416); // bP
+selectCodeEditor("top_demo.sv", 421, 366); // bP
+typeControlKey((HResource) null, "top_demo.sv", 'c'); // bP
+typeControlKey((HResource) null, "top_demo.sv", 'c'); // bP
+// Elapsed time: 120 seconds
+selectCodeEditor("top_demo.sv", 961, 335); // bP
+selectCodeEditor("top_demo.sv", 893, 395); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
