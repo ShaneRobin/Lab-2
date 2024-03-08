@@ -17,7 +17,7 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # Errors: 0, Warnings: 1
 # Model Technology ModelSim SE-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 16:27:13 on Mar 06,2024
+# Start time: 18:19:19 on Mar 07,2024
 # vlog -reportprogress 300 des_stub.sv tb_des.sv 
 # -- Compiling module GenerateKeys
 # -- Compiling module PC1
@@ -41,10 +41,10 @@
 # 
 # Top level modules:
 # 	stimulus
-# End time: 16:27:13 on Mar 06,2024, Elapsed time: 0:00:00
+# End time: 18:19:19 on Mar 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs="+acc" work.stimulus 
-# Start time: 16:27:13 on Mar 06,2024
+# Start time: 18:19:19 on Mar 07,2024
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading sv_std.std
 # Loading work.stimulus(fast)
@@ -69,8 +69,279 @@
 # .main_pane.wave.interior.cs.body.pw.wf
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: rshan  Hostname: SHANELAPTOP  ProcessID: 4576
-#           Attempting to use alternate WLF file "./wlftfamyki".
+#           Attempting to use alternate WLF file "./wlftff6f00".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftfamyki
-# End time: 16:28:13 on Mar 06,2024, Elapsed time: 0:01:00
+#           Using alternate file: ./wlftff6f00
+do des.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is rshan@SHANELAPTOP.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is rshan@SHANELAPTOP.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt2".  Locker is rshan@SHANELAPTOP.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 18:25:15 on Mar 07,2024
+# vlog -reportprogress 300 des_stub.sv tb_des.sv 
+# -- Compiling module GenerateKeys
+# -- Compiling module PC1
+# -- Compiling module PC2
+# -- Compiling module SF
+# -- Compiling module EF
+# -- Compiling module feistel
+# -- Compiling module round
+# -- Compiling module IP
+# -- Compiling module FP
+# -- Compiling module S1_Box
+# -- Compiling module S2_Box
+# -- Compiling module S3_Box
+# -- Compiling module S4_Box
+# -- Compiling module S5_Box
+# -- Compiling module S6_Box
+# -- Compiling module S7_Box
+# -- Compiling module S8_Box
+# -- Compiling module DES
+# -- Compiling module stimulus
+# 
+# Top level modules:
+# 	stimulus
+# End time: 18:25:15 on Mar 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:25:16 on Mar 07,2024, Elapsed time: 0:05:57
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" work.stimulus 
+# Start time: 18:25:16 on Mar 07,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading sv_std.std
+# Loading work.stimulus(fast)
+# Loading work.DES(fast)
+# Loading work.GenerateKeys(fast)
+# Loading work.PC1(fast)
+# Loading work.PC2(fast)
+# Loading work.IP(fast)
+# Loading work.round(fast)
+# Loading work.feistel(fast)
+# Loading work.EF(fast)
+# Loading work.S8_Box(fast)
+# Loading work.S7_Box(fast)
+# Loading work.S6_Box(fast)
+# Loading work.S5_Box(fast)
+# Loading work.S4_Box(fast)
+# Loading work.S3_Box(fast)
+# Loading work.S2_Box(fast)
+# Loading work.S1_Box(fast)
+# Loading work.SF(fast)
+# Loading work.FP(fast)
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rshan  Hostname: SHANELAPTOP  ProcessID: 4576
+#           Attempting to use alternate WLF file "./wlft0dzcgj".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft0dzcgj
+do des.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is rshan@SHANELAPTOP.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is rshan@SHANELAPTOP.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt2".  Locker is rshan@SHANELAPTOP.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 18:26:14 on Mar 07,2024
+# vlog -reportprogress 300 des_stub.sv tb_des.sv 
+# -- Compiling module GenerateKeys
+# -- Compiling module PC1
+# -- Compiling module PC2
+# -- Compiling module SF
+# -- Compiling module EF
+# -- Compiling module feistel
+# -- Compiling module round
+# -- Compiling module IP
+# -- Compiling module FP
+# -- Compiling module S1_Box
+# -- Compiling module S2_Box
+# -- Compiling module S3_Box
+# -- Compiling module S4_Box
+# -- Compiling module S5_Box
+# -- Compiling module S6_Box
+# -- Compiling module S7_Box
+# -- Compiling module S8_Box
+# -- Compiling module DES
+# -- Compiling module stimulus
+# 
+# Top level modules:
+# 	stimulus
+# End time: 18:26:14 on Mar 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:26:16 on Mar 07,2024, Elapsed time: 0:01:00
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" work.stimulus 
+# Start time: 18:26:16 on Mar 07,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading sv_std.std
+# Loading work.stimulus(fast)
+# Loading work.DES(fast)
+# Loading work.GenerateKeys(fast)
+# Loading work.PC1(fast)
+# Loading work.PC2(fast)
+# Loading work.IP(fast)
+# Loading work.round(fast)
+# Loading work.feistel(fast)
+# Loading work.EF(fast)
+# Loading work.S8_Box(fast)
+# Loading work.S7_Box(fast)
+# Loading work.S6_Box(fast)
+# Loading work.S5_Box(fast)
+# Loading work.S4_Box(fast)
+# Loading work.S3_Box(fast)
+# Loading work.S2_Box(fast)
+# Loading work.S1_Box(fast)
+# Loading work.SF(fast)
+# Loading work.FP(fast)
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rshan  Hostname: SHANELAPTOP  ProcessID: 4576
+#           Attempting to use alternate WLF file "./wlftie3syr".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftie3syr
+#         20 tests completed with          0 errors
+# ** Note: $finish    : tb_des.sv(61)
+#    Time: 195 ns  Iteration: 1  Instance: /stimulus
+# 1
+# Break in Module stimulus at tb_des.sv line 61
+do des.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is rshan@SHANELAPTOP.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is rshan@SHANELAPTOP.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt2".  Locker is rshan@SHANELAPTOP.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 18:27:28 on Mar 07,2024
+# vlog -reportprogress 300 des_stub.sv tb_des.sv 
+# -- Compiling module GenerateKeys
+# -- Compiling module PC1
+# -- Compiling module PC2
+# -- Compiling module SF
+# -- Compiling module EF
+# -- Compiling module feistel
+# -- Compiling module round
+# -- Compiling module IP
+# -- Compiling module FP
+# -- Compiling module S1_Box
+# -- Compiling module S2_Box
+# -- Compiling module S3_Box
+# -- Compiling module S4_Box
+# -- Compiling module S5_Box
+# -- Compiling module S6_Box
+# -- Compiling module S7_Box
+# -- Compiling module S8_Box
+# -- Compiling module DES
+# -- Compiling module stimulus
+# 
+# Top level modules:
+# 	stimulus
+# End time: 18:27:28 on Mar 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:27:30 on Mar 07,2024, Elapsed time: 0:01:14
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" work.stimulus 
+# Start time: 18:27:30 on Mar 07,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading sv_std.std
+# Loading work.stimulus(fast)
+# Loading work.DES(fast)
+# Loading work.GenerateKeys(fast)
+# Loading work.PC1(fast)
+# Loading work.PC2(fast)
+# Loading work.IP(fast)
+# Loading work.round(fast)
+# Loading work.feistel(fast)
+# Loading work.EF(fast)
+# Loading work.S8_Box(fast)
+# Loading work.S7_Box(fast)
+# Loading work.S6_Box(fast)
+# Loading work.S5_Box(fast)
+# Loading work.S4_Box(fast)
+# Loading work.S3_Box(fast)
+# Loading work.S2_Box(fast)
+# Loading work.S1_Box(fast)
+# Loading work.SF(fast)
+# Loading work.FP(fast)
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rshan  Hostname: SHANELAPTOP  ProcessID: 4576
+#           Attempting to use alternate WLF file "./wlftn13ein".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftn13ein
+#         20 tests completed with          0 errors
+# ** Note: $finish    : tb_des.sv(61)
+#    Time: 195 ns  Iteration: 1  Instance: /stimulus
+# 1
+# Break in Module stimulus at tb_des.sv line 61
+do des.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is rshan@SHANELAPTOP.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is rshan@SHANELAPTOP.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt2".  Locker is rshan@SHANELAPTOP.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 18:28:24 on Mar 07,2024
+# vlog -reportprogress 300 des_stub.sv tb_des.sv 
+# -- Compiling module GenerateKeys
+# -- Compiling module PC1
+# -- Compiling module PC2
+# -- Compiling module SF
+# -- Compiling module EF
+# -- Compiling module feistel
+# -- Compiling module round
+# -- Compiling module IP
+# -- Compiling module FP
+# -- Compiling module S1_Box
+# -- Compiling module S2_Box
+# -- Compiling module S3_Box
+# -- Compiling module S4_Box
+# -- Compiling module S5_Box
+# -- Compiling module S6_Box
+# -- Compiling module S7_Box
+# -- Compiling module S8_Box
+# -- Compiling module DES
+# -- Compiling module stimulus
+# 
+# Top level modules:
+# 	stimulus
+# End time: 18:28:24 on Mar 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:28:25 on Mar 07,2024, Elapsed time: 0:00:55
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" work.stimulus 
+# Start time: 18:28:25 on Mar 07,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading sv_std.std
+# Loading work.stimulus(fast)
+# Loading work.DES(fast)
+# Loading work.GenerateKeys(fast)
+# Loading work.PC1(fast)
+# Loading work.PC2(fast)
+# Loading work.IP(fast)
+# Loading work.round(fast)
+# Loading work.feistel(fast)
+# Loading work.EF(fast)
+# Loading work.S8_Box(fast)
+# Loading work.S7_Box(fast)
+# Loading work.S6_Box(fast)
+# Loading work.S5_Box(fast)
+# Loading work.S4_Box(fast)
+# Loading work.S3_Box(fast)
+# Loading work.S2_Box(fast)
+# Loading work.S1_Box(fast)
+# Loading work.SF(fast)
+# Loading work.FP(fast)
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rshan  Hostname: SHANELAPTOP  ProcessID: 4576
+#           Attempting to use alternate WLF file "./wlft0ja146".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft0ja146
+#         20 tests completed with          0 errors
+# ** Note: $finish    : tb_des.sv(61)
+#    Time: 195 ns  Iteration: 1  Instance: /stimulus
+# 1
+# Break in Module stimulus at tb_des.sv line 61
+# End time: 18:29:58 on Mar 07,2024, Elapsed time: 0:01:33
 # Errors: 0, Warnings: 2
