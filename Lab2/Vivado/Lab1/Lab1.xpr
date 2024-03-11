@@ -177,7 +177,28 @@
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020" CtrlBit="true">
+        <ReportConfig DisplayName="Utilization - Synth Design" Name="synth_1_synth_report_utilization_0" Spec="report_utilization" RunStep="synth_design" ReportFile="top_demo_utilization_synth.rpt" Version="1" Minor="0">
+          <ReportConfigOption Name="dummy_option" Type="string"/>
+          <ReportConfigOutputOption Name="pb" Type="string" Value="top_demo_utilization_synth.pb"/>
+        </ReportConfig>
+        <ReportConfig DisplayName="synthesis_report" Name="synth_1_synth_synthesis_report_0" Spec="" RunStep="synth_design" ReportFile="top_demo.vds">
+          <ReportConfigOption Name="dummy_option" Type="string"/>
+        </ReportConfig>
+        <ReportConfig DisplayName="Power - Synth Design" Name="synth_1_synth_report_power_0" Spec="report_power" RunStep="synth_design" ReportFile="synth_report_power_0.rpt" Version="1" Minor="0">
+          <ReportConfigOption Name="dummy_option" Type="string"/>
+          <ReportConfigOutputOption Name="pb" Type="string" Value="synth_report_power_summary_0.pb"/>
+          <ReportConfigOutputOption Name="rpx" Type="string" Value="synth_report_power_0.rpx"/>
+        </ReportConfig>
+        <ReportConfig DisplayName="Utilization 1 - Synth Design" Name="synth_1_synth_report_utilization_1" Spec="report_utilization" RunStep="synth_design" ReportFile="top_demo_utilization_synth_1.rpt" Version="1" Minor="0">
+          <ReportConfigOption Name="dummy_option" Type="string"/>
+          <ReportConfigOutputOption Name="pb" Type="string" Value="top_demo_utilization_synth_1.pb"/>
+        </ReportConfig>
+        <ReportConfig DisplayName="Timing - Synth Design" Name="synth_1_synth_report_timing_0" Spec="report_timing" RunStep="synth_design" ReportFile="synth_report_timing_0.rpt" Version="1" Minor="0">
+          <ReportConfigOption Name="dummy_option" Type="string"/>
+          <ReportConfigOutputOption Name="rpx" Type="string" Value="synth_report_timing_0.rpx"/>
+        </ReportConfig>
+      </ReportStrategy>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>

@@ -54,16 +54,16 @@ module top_demo
   //assign key = 64'h433e4529462a4a62;
   //assign key = 64'h3b3898371520f75e;
   //assign key = 64'h0e329232ea6d0d73;
-  //assign led[1] = key[0]^key[8]^key[16]^key[24]^key[32]^key[40]^key[48]^key[56];
+  assign led[0] = ~{key[0]^key[8]^key[16]^key[24]^key[32]^key[40]^key[48]^key[56]};
   
-assign led[0] = key[4];
-assign led[1] = key[8];
-assign led[2] = key[16];
-assign led[3] = key[32];
-assign led[4] = key[40];
-assign led[5] = key[48];
-assign led[6] = key[56];
-assign led[7] = key[64];
+//assign led[0] = key[4];
+//assign led[1] = key[8];
+//assign led[2] = key[16];
+//assign led[3] = key[32];
+//assign led[4] = key[40];
+//assign led[5] = key[48];
+//assign led[6] = key[56];
+//assign led[7] = key[64];
 
   always_comb begin
   case(sw[3:0])

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1709924102">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1710179379">
   <File Type="PA-TCL" Name="top_demo.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="top_demo_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="top_demo_reports.tcl"/>

@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Fri Mar  8 12:55:50 2024
-| Host         : CEAT-ENDV350-10 running 64-bit major release  (build 9200)
+| Date         : Mon Mar 11 12:50:25 2024
+| Host         : CEAT-ENDV350-08 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file top_demo_utilization_synth.rpt -pb top_demo_utilization_synth.pb
 | Design       : top_demo
 | Device       : 7z020clg484-1
@@ -30,8 +30,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  946 |     0 |     53200 |  1.78 |
-|   LUT as Logic          |  946 |     0 |     53200 |  1.78 |
+| Slice LUTs*             |  957 |     0 |     53200 |  1.80 |
+|   LUT as Logic          |  957 |     0 |     53200 |  1.80 |
 |   LUT as Memory         |    0 |     0 |     17400 |  0.00 |
 | Slice Registers         |   19 |     0 |    106400 |  0.02 |
 |   Register as Flip Flop |   19 |     0 |    106400 |  0.02 |
@@ -146,14 +146,15 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT6     |  548 |                 LUT |
-| LUT2     |  272 |                 LUT |
+| LUT6     |  564 |                 LUT |
+| LUT2     |  288 |                 LUT |
 | LUT3     |  199 |                 LUT |
-| LUT4     |   97 |                 LUT |
-| LUT5     |   71 |                 LUT |
-| OBUF     |   20 |                  IO |
+| LUT4     |   96 |                 LUT |
+| LUT5     |   58 |                 LUT |
 | FDRE     |   19 |        Flop & Latch |
+| OBUF     |   13 |                  IO |
 | IBUF     |   10 |                  IO |
+| OBUFT    |    7 |                  IO |
 | CARRY4   |    4 |          CarryLogic |
 | LUT1     |    1 |                 LUT |
 | BUFG     |    1 |               Clock |

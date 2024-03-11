@@ -1,0 +1,117 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Mar 11 13:02:37 2024
+| Host         : CEAT-ENDV350-08 running 64-bit major release  (build 9200)
+| Command      : report_timing -file synth_report_timing_0.rpt -rpx synth_report_timing_0.rpx
+| Design       : top_demo
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+----------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 sw[7]
+                            (input port)
+  Destination:            sseg_ca
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        36.707ns  (logic 8.410ns (22.910%)  route 28.297ns (77.090%))
+  Logic Levels:           42  (IBUF=1 LUT2=13 LUT3=3 LUT4=5 LUT5=1 LUT6=18 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  sw[7] (IN)
+                         net (fo=0)                   0.000     0.000    sw[7]
+                         IBUF (Prop_ibuf_I_O)         0.921     0.921 f  sw_IBUF[7]_inst/O
+                         net (fo=436, unplaced)       0.800     1.721    stupid/r2/f1/sw_IBUF[4]
+                         LUT2 (Prop_lut2_I0_O)        0.124     1.845 f  stupid/r2/f1/g0_b0__1_i_1/O
+                         net (fo=4, unplaced)         0.473     2.318    stupid/r2/f1/mid_block2_13[31]
+                         LUT6 (Prop_lut6_I0_O)        0.124     2.442 r  stupid/r2/f1/g0_b2__1/O
+                         net (fo=1, unplaced)         0.449     2.891    stupid/r2/f1/right_block2_0[16]
+                         LUT2 (Prop_lut2_I0_O)        0.116     3.007 r  stupid/r2/f1/g0_b1__54_i_1/O
+                         net (fo=8, unplaced)         0.940     3.947    stupid/r3/g0_b0__7
+                         LUT6 (Prop_lut6_I0_O)        0.124     4.071 r  stupid/r3/g0_b0__1/O
+                         net (fo=1, unplaced)         0.449     4.520    stupid/r2/f1/right_block2[24]
+                         LUT2 (Prop_lut2_I1_O)        0.124     4.644 r  stupid/r2/f1/g0_b0__7/O
+                         net (fo=7, unplaced)         0.484     5.128    stupid/r2/f1/sw[7][11]
+                         LUT2 (Prop_lut2_I0_O)        0.124     5.252 r  stupid/r2/f1/g0_b0__5_i_2/O
+                         net (fo=4, unplaced)         0.926     6.178    stupid/r4/mid_block2[17]
+                         LUT6 (Prop_lut6_I3_O)        0.124     6.302 r  stupid/r4/g0_b3__5/O
+                         net (fo=5, unplaced)         0.477     6.779    stupid/r2/f1/right_block2_13[23]
+                         LUT2 (Prop_lut2_I1_O)        0.124     6.903 r  stupid/r2/f1/g0_b0_i_2__8/O
+                         net (fo=4, unplaced)         0.926     7.829    stupid/r5/mid_block2[20]
+                         LUT6 (Prop_lut6_I3_O)        0.124     7.953 r  stupid/r5/g0_b3/O
+                         net (fo=4, unplaced)         0.473     8.426    stupid/r3/out[1]
+                         LUT2 (Prop_lut2_I1_O)        0.124     8.550 r  stupid/r3/g0_b3__14/O
+                         net (fo=8, unplaced)         1.149     9.699    stupid/r6/mid_block2[6]
+                         LUT6 (Prop_lut6_I1_O)        0.124     9.823 r  stupid/r6/g0_b3__2/O
+                         net (fo=1, unplaced)         0.449    10.272    stupid/r2/f1/right_block2_15[28]
+                         LUT2 (Prop_lut2_I0_O)        0.124    10.396 r  stupid/r2/f1/g0_b3__3_i_2/O
+                         net (fo=6, unplaced)         0.481    10.877    stupid/r2/f1/g0_b1__1_0[11]
+                         LUT2 (Prop_lut2_I0_O)        0.116    10.993 r  stupid/r2/f1/g0_b3__6_i_2__3/O
+                         net (fo=4, unplaced)         1.135    12.128    stupid/r7/mid_block2[28]
+                         LUT6 (Prop_lut6_I1_O)        0.124    12.252 r  stupid/r7/g0_b1__6/O
+                         net (fo=3, unplaced)         0.467    12.719    stupid/r2/f1/right_block2_16[9]
+                         LUT4 (Prop_lut4_I2_O)        0.116    12.835 r  stupid/r2/f1/g0_b1__133/O
+                         net (fo=4, unplaced)         1.135    13.970    stupid/r8/mid_block2[9]
+                         LUT6 (Prop_lut6_I1_O)        0.124    14.094 r  stupid/r8/g0_b2/O
+                         net (fo=2, unplaced)         0.460    14.554    stupid/r2/f1/right_block2_17[3]
+                         LUT4 (Prop_lut4_I2_O)        0.116    14.670 r  stupid/r2/f1/g0_b1__138/O
+                         net (fo=8, unplaced)         1.149    15.819    stupid/r9/mid_block2[4]
+                         LUT6 (Prop_lut6_I3_O)        0.124    15.943 r  stupid/r9/g0_b2__2/O
+                         net (fo=1, unplaced)         0.449    16.392    stupid/r2/f1/right_block2_18[5]
+                         LUT2 (Prop_lut2_I0_O)        0.124    16.516 r  stupid/r2/f1/g0_b0_i_1/O
+                         net (fo=6, unplaced)         1.143    17.659    stupid/r10/r9_out[1]
+                         LUT6 (Prop_lut6_I1_O)        0.124    17.783 r  stupid/r10/g0_b1/O
+                         net (fo=4, unplaced)         0.473    18.256    stupid/r2/f1/right_block2_19[10]
+                         LUT4 (Prop_lut4_I2_O)        0.124    18.380 r  stupid/r2/f1/g0_b0__0_i_3__7/O
+                         net (fo=4, unplaced)         1.135    19.515    stupid/r11/mid_block2[6]
+                         LUT6 (Prop_lut6_I3_O)        0.124    19.639 r  stupid/r11/g0_b1__0/O
+                         net (fo=1, unplaced)         0.449    20.088    stupid/r2/f1/right_block2_20[21]
+                         LUT5 (Prop_lut5_I4_O)        0.116    20.204 r  stupid/r2/f1/g0_b0_i_5__0/O
+                         net (fo=3, unplaced)         0.467    20.671    stupid/r2/f1/r11_out[21]
+                         LUT2 (Prop_lut2_I0_O)        0.124    20.795 r  stupid/r2/f1/g0_b0_i_2__0/O
+                         net (fo=4, unplaced)         0.926    21.721    stupid/r12/mid_block2[16]
+                         LUT6 (Prop_lut6_I1_O)        0.124    21.845 r  stupid/r12/g0_b2/O
+                         net (fo=3, unplaced)         0.467    22.312    stupid/r2/f1/right_block2_21[16]
+                         LUT3 (Prop_lut3_I0_O)        0.124    22.436 r  stupid/r2/f1/g0_b1__100/O
+                         net (fo=4, unplaced)         1.135    23.571    stupid/r13/mid_block2[17]
+                         LUT6 (Prop_lut6_I1_O)        0.124    23.695 r  stupid/r13/g0_b2__5/O
+                         net (fo=1, unplaced)         0.449    24.144    stupid/r2/f1/right_block2_22[12]
+                         LUT4 (Prop_lut4_I3_O)        0.124    24.268 r  stupid/r2/f1/g0_b0__1_i_1__6/O
+                         net (fo=9, unplaced)         1.152    25.420    stupid/r14/r13_out[7]
+                         LUT6 (Prop_lut6_I0_O)        0.124    25.544 r  stupid/r14/g0_b2__3/O
+                         net (fo=1, unplaced)         0.449    25.993    stupid/r2/f1/right_block2_23[3]
+                         LUT3 (Prop_lut3_I2_O)        0.124    26.117 r  stupid/r2/f1/g0_b0__0_i_3__2/O
+                         net (fo=6, unplaced)         0.481    26.598    stupid/r2/f1/inp_block[0]
+                         LUT2 (Prop_lut2_I1_O)        0.116    26.714 r  stupid/r2/f1/g0_b1__20/O
+                         net (fo=4, unplaced)         0.473    27.187    stupid/r15/mid_block2[4]
+                         LUT6 (Prop_lut6_I5_O)        0.124    27.311 r  stupid/r15/g0_b3__5/O
+                         net (fo=1, unplaced)         0.449    27.760    stupid/r2/f1/right_block2_24[0]
+                         LUT2 (Prop_lut2_I0_O)        0.124    27.884 r  stupid/r2/f1/g0_b1__8_i_1/O
+                         net (fo=3, unplaced)         0.467    28.351    stupid/r2/f1/r15_out[0]
+                         LUT2 (Prop_lut2_I1_O)        0.124    28.475 r  stupid/r2/f1/g0_b1__8/O
+                         net (fo=4, unplaced)         0.926    29.401    stupid/r16/mid_block2_0[1]
+                         LUT6 (Prop_lut6_I2_O)        0.124    29.525 r  stupid/r16/g0_b0__6/O
+                         net (fo=1, unplaced)         0.449    29.974    stupid/r2/f1/right_block2_25[11]
+                         LUT3 (Prop_lut3_I2_O)        0.116    30.090 r  stupid/r2/f1/sseg_ca_OBUF_inst_i_41/O
+                         net (fo=1, unplaced)         0.902    30.992    stupid/r2/f1/ciphertext[34]
+                         LUT6 (Prop_lut6_I1_O)        0.124    31.116 r  stupid/r2/f1/sseg_ca_OBUF_inst_i_24/O
+                         net (fo=1, unplaced)         0.449    31.565    stupid/r2/f1/sseg_ca_OBUF_inst_i_24_n_0
+                         LUT6 (Prop_lut6_I1_O)        0.124    31.689 r  stupid/r2/f1/sseg_ca_OBUF_inst_i_11/O
+                         net (fo=7, unplaced)         0.484    32.173    stupid/r2/f1/sseg_ca_OBUF_inst_i_11_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124    32.297 r  stupid/r2/f1/sseg_ca_OBUF_inst_i_3/O
+                         net (fo=1, unplaced)         0.902    33.199    stupid/r2/f1/sseg_ca_OBUF_inst_i_3_n_0
+                         LUT4 (Prop_lut4_I1_O)        0.124    33.323 r  stupid/r2/f1/sseg_ca_OBUF_inst_i_1/O
+                         net (fo=1, unplaced)         0.800    34.123    sseg_ca_OBUF
+                         OBUF (Prop_obuf_I_O)         2.584    36.707 r  sseg_ca_OBUF_inst/O
+                         net (fo=0)                   0.000    36.707    sseg_ca
+                                                                      r  sseg_ca (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
